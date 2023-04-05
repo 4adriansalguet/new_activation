@@ -24,7 +24,7 @@
 
 
 	<!-- <li <?php $this->helpers->isActiveMenu("home"); ?> class="btn"><a  href="home#content">HOME</a></li>
-			                <!-- <li <?php $this->helpers->isActiveMenu("about"); ?>><a href="about#content">ABOUT US</a></li> -->
+							<!-- <li <?php $this->helpers->isActiveMenu("about"); ?>><a href="about#content">ABOUT US</a></li> -->
 	<!-- <div class="menu_flex">
 						<ul>
 							
@@ -38,7 +38,7 @@
 					<h2>call us at</h2>
 					<img src="" alt="">
 					<h3>856 - 479 - 8432</h3>
-					<span class="_header_gap"></span>
+					<span class="header_gap"></span>
 					<img src="./public/images/common/soc_med_header.jpg" alt="soc_med">
 				</div>
 			</div>
@@ -49,14 +49,22 @@
 						<img src="./public/images/common/main_logo.jpg" alt="logo">
 						<nav>
 							<ul>
-								<li <?php $this->helpers->isActiveMenu("home"); ?> class="btn"><a href="home#content">HOME</a></li>
-								<li <?php $this->helpers->isActiveMenu("commercial"); ?>><a href="commercials#content">COMMERCIAL RENDERINGS</a></li>
-								<li <?php $this->helpers->isActiveMenu("residentials"); ?>><a href="residentials#content">RESIDENTIAL RENDERINGS</a></li>
-								<li <?php $this->helpers->isActiveMenu("interior"); ?>><a href="interior#content">INTERIOR RENDERINGS</a></li>
-								<li <?php $this->helpers->isActiveMenu("floorplan"); ?>><a href="floorplan#content">FLOORPLAN RENDERINGS</a></li>
-								<li <?php $this->helpers->isActiveMenu("permit"); ?>><a href="permit#content">PERMIT TO BUILD RENDERINGS</a></li>
-								<li <?php $this->helpers->isActiveMenu("contractor"); ?>><a href="contractor#content">CONTRACTOR RENDERINGS</a></li>
-								<li <?php $this->helpers->isActiveMenu("virtual"); ?>><a href="virtual#content">VIRTUAL STAGING</a></li>
+								<li <?php $this->helpers->isActiveMenu("home"); ?> class="btn"><a
+										href="home#content">HOME</a></li>
+								<li <?php $this->helpers->isActiveMenu("commercial"); ?>><a
+										href="commercials#content">COMMERCIAL RENDERINGS</a></li>
+								<li <?php $this->helpers->isActiveMenu("residentials"); ?>><a
+										href="residentials#content">RESIDENTIAL RENDERINGS</a></li>
+								<li <?php $this->helpers->isActiveMenu("interior"); ?>><a
+										href="interior#content">INTERIOR RENDERINGS</a></li>
+								<li <?php $this->helpers->isActiveMenu("floorplan"); ?>><a
+										href="floorplan#content">FLOORPLAN RENDERINGS</a></li>
+								<li <?php $this->helpers->isActiveMenu("permit"); ?>><a href="permit#content">PERMIT TO
+										BUILD RENDERINGS</a></li>
+								<li <?php $this->helpers->isActiveMenu("contractor"); ?>><a
+										href="contractor#content">CONTRACTOR RENDERINGS</a></li>
+								<li <?php $this->helpers->isActiveMenu("virtual"); ?>><a href="virtual#content">VIRTUAL
+										STAGING</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -74,6 +82,6 @@
 	</section>
 
 	<!-- Hero -->
-	<?php if ($view == "home") : ?>
+	<?php if ($view == "home"): ?>
 
 	<?php endif; ?>
