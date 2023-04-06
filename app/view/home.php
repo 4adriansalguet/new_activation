@@ -41,7 +41,7 @@
     <div class="container">
         <div class="gallery">
 
-            <img src="./public/images/common/card_1.fw.png" alt="commercial">
+            <img class="gallery-img" src="./public/images/common/card1.jpg" alt="commercial">
             <div class="decoration">
                 <figure>
                     <figcaption>
@@ -53,7 +53,7 @@
         </div>
 
         <div class="gallery">
-            <img src="./public/images/common/card_2.fw.png" alt="commercial">
+            <img class="gallery-img" src="./public/images/common/card2.jpg" alt="commercial">
             <div class="decoration">
                 <figure>
                     <figcaption>
@@ -65,7 +65,7 @@
         </div>
 
         <div class="gallery">
-            <img src="./public/images/common/card_3.fw.png" alt="commercial">
+            <img class="gallery-img" src="./public/images/common/card3.jpg" alt="commercial">
             <div class="decoration">
                 <figure>
                     <figcaption>
@@ -83,8 +83,10 @@
     <div class="container">
         <div class="card">
             <div class="content">
-                <img src="./public/images/common/quotation.png" alt="">
-                <div class="text_container">
+                <div class="quote-container">
+                    <img class="quote" src="./public/images/common/quotation.png" alt="quote">
+                </div>
+                <div class="text_container">    
                     <h2>T E S T I M O N I A L S</h2>
                     <h3>Renderings Plus</h3>
                     <p class="reviews">Real Estate Marketing Services Reviews</p>
@@ -102,7 +104,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#">MORE <img src="./public/images/common/arrow_right.fw.png" alt=""></a>
+            <a href="#">MORE <img src="./public/images/common/arrow_right.fw.png" alt="symbol"></a>
         </div>
     </div>
 </section>

@@ -50,7 +50,9 @@
 						<span class="tel_num"> 856 - 749 - 8432 </span>
 					</div>
 					<div class="soc_med">
-						<img src="./public/images/common/soc_med_header.png" alt="#">
+						<img src="./public/images/icons/facebook.fw.png" alt="#">
+						<img src="./public/images/icons/instagram.fw.png" alt="#">
+						<img src="./public/images/icons/location.fw.png" alt="#">
 					</div>
 				</div>
 				<nav>
@@ -73,10 +75,10 @@
 
 		</div>
 		<?php if ($view == "home") : ?>
-				<div id="text_container">
-					<h2>A CREATIVE TEAM OF</h2>
-					<h3>Real Estate Renderings Specialists</h3>
-					<a class="btn" href="#">LEARN MORE</a>
-				</div>
-			<?php endif; ?>
+			<div id="text_container">
+				<h2>A CREATIVE TEAM OF</h2>
+				<h3>Real Estate Renderings Specialists</h3>
+				<a class="btn" href="#">LEARN MORE</a>
+			</div>
+		<?php endif; ?>
 	</header>

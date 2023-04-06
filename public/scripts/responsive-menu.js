@@ -8,7 +8,7 @@ window.onload = function () {
 	});
 
 	const menu_btn = document.querySelector('.hamburger');
-	const mobile_menu = document.querySelector('.menu-content nav');
+	const mobile_menu = document.querySelector('.nav_menu nav');
 
 	menu_btn.addEventListener('click', function () {
 		if(!menu_btn.classList.contains('is-active')){
@@ -21,4 +21,3 @@ window.onload = function () {
 		
 	});
 }
-

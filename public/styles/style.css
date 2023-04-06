@@ -8,10 +8,10 @@
 }
 
 
-/* section{
+section{
+    width: 100%;
     transition: 0.5s;
-    padding: 0;
-} */
+}
 
 
 @font-face {
@@ -154,8 +154,17 @@ header {
     display: flex;
     justify-content: end;
     margin-left: auto;
-    margin-right: 36px;
+    margin-right: 68px;
     padding-bottom: 44px;
+}
+
+#header_container .nav_menu .header_info .soc_med {
+    max-width: 162px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 23px;
+    cursor: pointer;
 }
 
 #header_container .nav_menu .header_info .phone_text {
@@ -164,7 +173,6 @@ header {
 
 #header_container .nav_menu .header_info .phone {
     display: flex;
-
     align-items: center;
     color: #FFFFFF;
 }
@@ -199,8 +207,13 @@ header {
     display: flex;
     column-gap: 10px;
     font-family: 'Poppins';
-    font-size: 13px;
+    font-size: clamp(0rem, 0rem + 0.6771vw, 0.8125rem);
     color: #FFFFFF;
+}
+
+#header_container .nav_menu nav ul li a:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 #text_container {
@@ -212,7 +225,7 @@ header {
 
 #text_container h2 {
     font-family: 'Montserrat';
-    font-size: 60px;
+    font-size: clamp(0.75rem, 0.75rem + 2.5vw, 3.75rem);
     font-weight: 700;
     color: #FFFFFF;
     margin-bottom: 22px;
@@ -220,7 +233,7 @@ header {
 
 #text_container h3 {
     font-family: 'The Historia Demo';
-    font-size: 100px;
+    font-size: clamp(0.875rem, 0.875rem + 4.4792vw, 6.25rem);
     color: #E9E47E;
     font-weight: 200;
     margin-bottom: 44px;
@@ -259,25 +272,33 @@ header {
 #who_are_we {
     background: url('../images/common/section_2_background.fw.jpg')no-repeat center;
     background-size: cover;
+    padding: 0 20px;
 }
 
 #who_are_we .container {
     max-width: 1810px;
     width: 100%;
-    padding-top: 272px;
-    padding-bottom: 269px;
-    padding-left: 110px;
+    padding: 271px 107px;
 }
 
 #who_are_we .container .card {
     max-width: 1004px;
     width: 100%;
     background: #000;
+    position: relative;
+    z-index: 1;
 }
 
-#who_are_we .container .card {
-    max-width: 1004px;
-    width: 100%;    
+#who_are_we .card::before {
+    content: '';
+    position: absolute;
+    width: 598px;
+    height: 420px;
+    background: #0000008a;
+    z-index: -1;
+    left: -52px;
+    bottom: -42px;
+    border-radius: 20px;
 }
 
 #who_are_we .container .card .text_container {
@@ -289,7 +310,7 @@ header {
 
 #who_are_we .container .card .text_container h2 {
     font-family: 'Montserrat';
-    font-size: 19px;
+    font-size: clamp(0.75rem, 0.75rem + 0.3646vw, 1.1875rem);
     color: #E5BA20;
     letter-spacing: 0.4em;
     padding-bottom: 15px;
@@ -297,7 +318,7 @@ header {
 
 #who_are_we .container .card .text_container h3 {
     font-family: 'Montserrat';
-    font-size: 50px;
+    font-size: clamp(0.875rem, 0.875rem + 1.875vw, 3.125rem);
     padding-bottom: 6px;
     background-image: linear-gradient(to right, #EBE680, #997E22);
     -webkit-background-clip: text;
@@ -306,7 +327,7 @@ header {
 
 #who_are_we .container .card .text_container h4 {
     font-family: 'Montserrat';
-    font-size: 19px;
+    font-size: clamp(0.75rem, 0.75rem + 0.3646vw, 1.1875rem);
     color: #FFFFFF;
     letter-spacing: 0.2em;
     padding-bottom: 24px;
@@ -314,7 +335,7 @@ header {
 
 #who_are_we .container .card .text_container p {
     font-family: 'Montserrat';
-    font-size: 16px;
+    font-size: clamp(0rem, 0rem + 0.8333vw, 1rem);
     text-align: justify;
     color: #FFFFFF;
     letter-spacing: 0.009em;
@@ -330,7 +351,7 @@ header {
 
 #who_are_we .container .card .text_container p span {
     font-family: 'Montserrat';
-    font-size: 25px;
+    font-size: clamp(0.75rem, 0.75rem + 0.3646vw, 1.1875rem);
     font-weight: bold;
     padding-bottom: 23px;
     background-image: linear-gradient(to right, #EBE680, #997E22);
@@ -360,8 +381,7 @@ header {
     background-size: cover;
     background-color: rgba('0,0,0,0.9');
     object-fit: cover;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 20px;
 }
 
 #about_us .container {
@@ -378,14 +398,14 @@ header {
 
 #about_us .container h2 {
     font-family: 'Montserrat';
-    font-size: 60px;
+    font-size: clamp(0.75rem, 0.75rem + 2.5vw, 3.75rem);
     font-weight: bold;
     color: #FFFFFF;
 }
 
 #about_us .container h3 {
     font-family: 'Montserrat';
-    font-size: 60px;
+    font-size: clamp(0.75rem, 0.75rem + 2.5vw, 3.75rem);
     font-weight: 300;
     color: #C3A952;
     padding-bottom: 38px;
@@ -401,6 +421,7 @@ header {
     background: url('../images/common/section_4_background.fw.png') no-repeat center;
     background-size: cover;
     object-fit: cover;
+    padding: 0 20px;
 }
 
 #what_we_do .text {
@@ -413,7 +434,7 @@ header {
 
 #what_we_do .text h2 {
     font-family: 'Montserrat';
-    font-size: 19px;
+    font-size: clamp(0.75rem, 0.75rem + 0.3646vw, 1.1875rem);
     color: #E5BB21;
     letter-spacing: 0.4em;
     padding-bottom: 15px;
@@ -421,7 +442,7 @@ header {
 
 #what_we_do .text h3 {
     font-family: 'Montserrat';
-    font-size: 50px;
+    font-size: clamp(0.875rem, 0.875rem + 1.875vw, 3.125rem);
     background-image: linear-gradient(to right, #EBE680, #997E22);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -430,7 +451,7 @@ header {
 
 #what_we_do .text h4 {
     font-family: 'Montserrat';
-    font-size: 19px;
+    font-size: clamp(0.75rem, 0.75rem + 0.3646vw, 1.1875rem);
     font-weight: 400;
     color: #131313;
     letter-spacing: 0.2em;
@@ -451,6 +472,10 @@ header {
     width: 100%;
     position: relative;
 }
+#what_we_do .container .gallery .gallery-img{
+    height: 100%;
+    width: 100%;
+}
 
 #what_we_do .container .gallery .decoration {
     position: absolute;
@@ -460,7 +485,6 @@ header {
     font-family: 'Montserrat';
     color: #FFFFFF;
     bottom: 0;
-    margin-bottom: 5px;
 }
 
 #what_we_do .container .gallery .decoration a {
@@ -473,6 +497,14 @@ header {
     border-top-left-radius: 15px;
     background: linear-gradient(to right, #E2DB76, #9B8229);
     margin-left: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#what_we_do .container .gallery .decoration a:hover {
+    background-color: #FFFFFF;
+    color: #E5BC22;
 }
 
 /* === SECTION 5 === */
@@ -480,50 +512,60 @@ header {
 #testimonial {
     background: url('../images/common/section_5_background.fw.png') no-repeat center;
     background-size: cover;
+    padding: 0 20px;
 }
 
 #testimonial .container {
     max-width: 1810px;
     width: 100%;
-    padding-top: 255px;
-    padding-bottom: 223px;
-    padding-left: 110px;
+    padding: 255px 110px 223px 110px;
 }
 
 #testimonial .container .card {
     max-width: 1005px;
     width: 100%;
     background: #000;
+    position: relative;
+    z-index: 1;
 }
+
+#testimonial .container .card::before {
+    content: '';
+    position: absolute;
+    width: 598px;
+    height: 420px;
+    background: #0000008a;
+    z-index: -1;
+    left: -52px;
+    bottom: -42px;
+    border-radius: 20px;
+}
+
 
 #testimonial .container .card .content {
-    max-width: 655px;
     width: 100%;
-    padding-top: 92px;
-    padding-left: 80px;
-}
-
-#testimonial .container .card .content .text_container {
+    padding: 92px 80px 92px 80px;
     display: flex;
-    flex-direction: column;
-    align-items: self-start;
+    column-gap: 40px;
+}
+#testimonial .container .card .content .quote{
+    height: auto;
 }
 
 #testimonial .container .card .content .text_container h2{
     max-width: 255px;
     width: 100%;
     font-family: 'Montserrat';
-    font-size: 19px;
+    font-size: clamp(0.75rem, 0.75rem + 0.3646vw, 1.1875rem);
     font-weight: 300px;
     color: #DBD26E;
     padding-bottom: 17px;
     letter-spacing: 0.4px;
-    margin: 0 auto;
 }
 
 #testimonial .container .card .content .text_container h3 {
     font-family: 'Montserrat';
-    font-size: 50px;
+    font-size: clamp(0.875rem, 0.875rem + 1.875vw, 3.125rem);
     font-weight: bold;
     margin: 0 auto;
     background-image: linear-gradient(to right, #EBE680, #997E22);
@@ -533,7 +575,7 @@ header {
 
 #testimonial .container .card .content .text_container p.reviews {
     font-family: 'Montserrat';
-    font-size: 17px;
+    font-size: clamp(0rem, 0rem + 0.8854vw, 1.0625rem);
     color: #FFFFFF;
     margin: 0 auto;
     padding-bottom: 50px;
@@ -546,7 +588,7 @@ header {
     justify-content: space-between;
     align-items: first baseline;
     font-family: 'Montserrat';
-    font-size: 25px;
+    font-size: clamp(0.75rem, 0.75rem + 0.6771vw, 1.5625rem);
     font-weight: bold;
     color: #FFFFFF;
     margin: 0 auto;
@@ -557,16 +599,18 @@ header {
     max-width: 385px;
     width: 100%;
     font-family: 'Montserrat';
-    font-size: 16px;
+    font-size: clamp(0rem, 0rem + 0.8333vw, 1rem);
     color: #FFFFFF;
     margin: 0 auto;
     line-height: 28px;
     padding-bottom: 42px;
 }
 
-#testimonial .container .card .content .text_container .sysmbols {
+#testimonial .container .card .content .text_container .symbols {
+    display: flex;
     gap: 10px;
     margin-left: auto;
+    padding: 0 0 0 15px;
 }
 
 #testimonial .container .card a {
@@ -586,6 +630,9 @@ header {
 }
 
 /* === SECTION 6 === */
+section#gallery {
+    padding:  0 20px 50px 20px;
+}
 
 #gallery .container {
     max-width: 1618px;
@@ -599,32 +646,223 @@ header {
     padding-top: 100px;
 }
 
-#gallery .container .gallery_container .commercial {
-    display: flex;
-    flex-direction: column;
-    row-gap: 24px;
+#gallery .container .gallery_container .commercial img,
+#gallery .container .gallery_container .residential img {
+    margin-bottom: 24px;
+    width: 100%;
 }
 
-#gallery .container .gallery_container .commercial h2 {
-    font-family: 'Poppins';
-    font-size: 50px;
-    font-weight: 800;
-    background-image: linear-gradient(to right, #EBE680, #997E22);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#gallery .container .gallery_container .residential {
-    display: flex;
-    flex-direction: column;
-    row-gap: 24px;
-}
-
+#gallery .container .gallery_container .commercial h2, 
 #gallery .container .gallery_container .residential h2 {
     font-family: 'Poppins';
-    font-size: 50px;
+    font-size: clamp(0.875rem, 0.875rem + 1.875vw, 3.125rem);
     font-weight: 800;
     background-image: linear-gradient(to right, #EBE680, #997E22);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+/* === FOOTER === 
+   === === ===
+   ===
+   === ===
+   === ===
+   ===
+   ===
+   ===
+*/
+    
+
+#footer {
+    position: relative;
+    background: #000000;
+}
+
+#footer .footer_container{
+    max-width: 1550px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#footer .footer_container .footer_wrapper{
+    display: flex;
+}
+
+#footer .footer_container .footer_wrapper .contact_us{
+    max-width: 835px;
+    width: 100%;
+    background: #ffffff;
+    padding: 80px 72px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.9);
+    margin-top: -50px;
+}
+
+#footer .footer_container .footer_wrapper .contact_us h2 {
+    font-family: 'Barlow';
+    font-size: clamp(0rem, 0rem + 0.8854vw, 1.0625rem);
+    font-weight: bold;
+    color: #878787;
+    letter-spacing: 0.5;
+    text-align: center;
+}
+
+#footer .footer_container .footer_wrapper .contact_us h3 {
+    font-family: 'Montserrat';
+    font-size: clamp(0.875rem, 0.875rem + 2.6563vw, 4.0625rem);
+    font-weight: bold;
+    background-image: linear-gradient(to right, #EBE680, #997E22);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#footer .footer_container .footer_wrapper .contact_us p {
+    max-width: 650px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    line-height: 22px;
+}
+
+#footer .footer_container .footer_wrapper .contact_us form{
+    margin-top: 30px;
+}
+
+#footer .footer_container .footer_wrapper .contact_us .form-control{
+    width: 100%;
+    border: 1px solid #E9E9E9;
+    background: #F4F4F4;
+    outline: 0;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+#footer .footer_container .footer_wrapper .contact_us .contact_us_btn{
+    text-transform: uppercase;
+    background: linear-gradient(#D0C563, #AD993D);
+    border: 0;
+    padding: 15px;
+    margin-left: auto;
+}
+#footer .footer_container .footer_wrapper .information {
+    padding: 36px 100px;
+    text-align: center;
+    font-family: 'Poppins';
+}
+#footer .footer_container .footer_wrapper .information .logos{
+    margin-bottom: 30px; 
+}
+
+#footer .row-info-contact {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+#footer .col-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+#footer .info-content{
+    color: #ffffff;
+}
+#footer .info-content p{
+    color: #ffffff;
+    font-size: 15px; 
+}
+#footer .information-social {
+    text-align: left;
+    display: flex;
+    column-gap: 20px;
+    margin-top: 30px; 
+    align-items: center;
+}
+
+#footer .footer_menu {
+    padding: 62px 0;
+}
+
+#footer .footer_menu .footer_content {
+    max-width: 1294px;
+    width: 100%;
+    padding: 17px;
+    background: #E5BA20;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+#footer .footer_menu .footer_content .menu_flex {
+    max-width: 1170px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins';
+    font-size: 13px;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+#footer .footer_menu .footer_content .menu_flex li a:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+#footer .copyright {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 10px;
+}
+
+/* === ===     === ===
+   === ===     === ===
+   ===  ===   ===  ===
+   ===   === ===   ===
+   ===     ==      ===
+   === MEDIA QUERY ===
+*/
+
+/* MOBILE */
+
+@media screen and (max-width: 959) {
+    .hamburger{
+        display: block;
+    }
+
+    header #header_container .nav_menu{
+        position: absolute;
+        background: #000000;
+        left: 0;
+        padding: 10px 40px;
+        width: 100%;
+        z-index: 1;
+    }
+    header #header_container .nav_menu nav {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #000000;
+        z-index: -1;
+        padding: 180px 20px;
+        transform: translateY(-130%);
+        height: 100vh;
+    }
+    
+    header #header_container .nav_menu nav ul{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    header #header_container .header_info {
+        flex-direction: column;
+        row-gap: 10px;
+    }
 }
