@@ -19,9 +19,11 @@
             </div>
             <div class="information">
                 <div class="information-wrapper">
+                    <div class="logo_wrapper">
                     <img class="logos" src="<?php echo URL ?>./public/images/common/footer-logo.fw.png"
                         alt="footer logo">
                     <img class="logos" src="<?php echo URL ?>/public/images/common/nahb.fw.png" alt="footer logo">
+                    </div>
                     <div class="row-info-contact">
                         <div class="col-info">
                             <img src="<?php echo URL ?>./public/images/common/footer-call.fw.png" alt="footer call">

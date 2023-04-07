@@ -18,7 +18,7 @@
         </div>
     </div>
 </section>
-
+ 
 <section id="about_us">
     <div class="container">
         <img src="./public/images/common/section_3_logo.fw.png" alt="logo">
@@ -87,7 +87,7 @@
                     <img class="quote" src="./public/images/common/quotation.png" alt="quote">
                 </div>
                 <div class="text_container">    
-                    <h2>T E S T I M O N I A L S</h2>
+                    <h2>TESTIMONIALS</h2>
                     <h3>Renderings Plus</h3>
                     <p class="reviews">Real Estate Marketing Services Reviews</p>
                     <div class="stars">

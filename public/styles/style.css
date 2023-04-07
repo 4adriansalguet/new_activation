@@ -352,9 +352,9 @@ header {
 
 #who_are_we .container .card .text_container h2 {
     font-family: 'Montserrat';
-    font-size: 19px;
+    font-size: clamp(0.75rem, 0.75rem + 0.3646vw, 1.1875rem);
     color: #E5BA20;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.6em;
     padding-bottom: 15px;
 }
 
@@ -569,6 +569,10 @@ header {
     object-fit: cover;
 }
 
+#testimonial .stars img {
+    width: clamp(6.25rem, 6.25rem + 6.9271vw, 14.5625rem);
+}
+
 #testimonial .container {
     max-width: 1810px;
     width: 100%;
@@ -702,7 +706,7 @@ section #gallery {
 #gallery .container .gallery_container {
     display: flex;
     column-gap: 24px;
-    padding-top: 100px;
+    padding: 100px 20px 70px 20px;
 }
 
 #gallery .container .gallery_container .commercial img,
@@ -909,7 +913,7 @@ section #gallery {
 
 /* === DESKTOP === */
 
-@media screen and (max-width: 1860px) {
+@media screen and (width <=1860px) {
     #what_we_do .container {
         align-items: center;
         flex-wrap: wrap;
@@ -917,27 +921,30 @@ section #gallery {
         row-gap: 50px;
         text-align: center;
     }
+
+    #what_we_do .container .gallery .decoration {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
 }
 
-@media screen and (max-width: 1715px) {
+@media screen and (width <=1715px) {
     header #header_container .logo img {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 1415px) {
-
-    #gallery .gallery_container .commercial img,
-    #gallery .gallery_container .residential img {
-        width: 100%;
+@media screen and (width <=1150px) {
+    #gallery .container .gallery_container {
+        margin-top: -80px;
     }
 
     #gallery .container .gallery_container .commercial h2,
     #gallery .container .gallery_container .residential h2 {
         display: flex;
         flex-direction: column;
-        row-gap: 5px;
-        font-size: 40px;
+        row-gap: px;
     }
 
     #footer .footer_container .footer_wrapper .contact_us {
@@ -947,36 +954,28 @@ section #gallery {
 }
 
 
-@media screen and (max-width: 1160px) {
+@media screen and (width <=1160px) {
     header #header_container .logo img {
         width: 90%;
     }
+
     #who_are_we .container .card .text_container {
         max-width: 820px;
         width: 85%;
         text-align: center;
     }
+
     #what_we_do .container {
         row-gap: 15px;
         margin-top: -20px;
     }
 }
 
-
-@media screen and (max-width: 1105px) {
-
-    #gallery .container .gallery_container .commercial h2,
-    #gallery .container .gallery_container .residential h2 {
-        row-gap: 5px;
-        text-align: center;
-        font-size: 40px;
-    }
-}
-
-@media screen and (max-width: 1080px) {
+@media screen and (width <=1080px) {
     #what_we_do .container {
         row-gap: 15px;
     }
+
     #footer .footer_wrapper .information img.logos {
         width: 70%;
     }
@@ -985,6 +984,7 @@ section #gallery {
         flex-direction: column;
         row-gap: 20px;
     }
+
     #footer .information-social {
         width: 100%;
         padding-top: 25px;
@@ -992,48 +992,64 @@ section #gallery {
     }
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (width <=1040px) {
     #testimonial .card .text_container .stars {
         flex-direction: column;
         row-gap: 20px;
-    } 
+    }
+
     #testimonial .card .text_container .reviews_content {
         text-align: justify;
     }
+
     #testimonial .quote-container img {
-    width: 100%;
+        width: 100%;
     }
+
     #gallery .gallery_container {
         margin-top: -50px;
     }
+
     #what_we_do .text {
         margin-top: -30px;
         line-height: 30px;
     }
+
     #what_we_do .container .gallery .decoration {
+        display: flex;
+        justify-content: space-between;
         margin-bottom: 5px;
     }
+
 }
 
 /* MOBILE */
 
-@media screen and (max-width: 959px) {
+@media screen and (width <=959px) {
 
     #footer .footer_wrapper {
         flex-direction: column;
     }
+
     #footer .footer_wrapper .information .row-info-contact {
         flex-direction: row;
     }
+
     #footer .footer_wrapper .information .information-wrapper {
-       display: flex;
-       flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
+
     #footer .information {
         margin: 0 auto;
     }
+
     #what_we_do .container .gallery .decoration figure figcaption {
         margin-right: 10px;
+    }
+
+    #testimonial .container .card .content .quote {
+        display: none;
     }
 
 
@@ -1073,16 +1089,186 @@ section #gallery {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (width <=800px) {
+
     #who_are_we .container .card::before,
     #testimonial .container .card::before {
         display: none;
     }
 
+    #testimonial .container .card .content .text_container p.reviews {
+        padding-bottom: 8px;
+    }
+
+    #testimonial .container .card .content .text_container .stars {
+        padding-bottom: 10px;
+    }
+
 }
-@media screen and (max-width: 680px) {
+
+@media screen and (width <=680px) {
     #testimonial .container .card .content {
         flex-direction: row-reverse;
         flex-wrap: nowrap;
     }
+
 }
+
+@media screen and (width <= 540px) {
+
+    #who_are_we .container {
+        padding: 35px 20px;
+    }
+
+    #who_are_we .container .card {
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    #who_are_we .container .card .text_container {
+        max-width: 820px;
+        width: 100%;
+        padding: 20px 20px 0 20px;
+    }
+
+    #who_are_we .container .card .text_container h2 {
+        padding-bottom: 5px;
+    }
+
+    #about_us .container h3 {
+        padding: 20px;
+    }
+
+    #who_are_we .container .card .text_container p {
+        padding-bottom: 20px;
+    }
+
+    #about_us .container img {
+        padding-bottom: 15px;
+    }
+
+    #about_us .container {
+        padding: 20px 20px;
+    }
+
+    #what_we_do .text {
+        margin-top: -45px;
+        line-height: 15px;
+    }
+
+    #what_we_do .container {
+        row-gap: 5px;
+        padding-bottom: 15px;
+    }
+
+    #testimonial .container {
+        margin: 0 auto;
+        width: 75%;
+        padding: 25px 0px 25px 0px;
+    }
+
+    #testimonial .container .card {
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    #testimonial .container .card .content {
+        width: 100%;
+        padding: 15px 0px 20px 15px;
+        display: flex;
+        column-gap: 45px;
+    }
+
+    #testimonial .container .card .content .text_container h2 {
+        padding-bottom: 10px;
+    }
+
+    #testimonial .container .card .content .text_container h3 {
+        padding-bottom: 15px;
+    }
+
+    #testimonial .container .card .content .text_container p.reviews {
+        line-height: 25px;
+    }
+
+    #testimonial .container .card .content .text_container p.reviews_content {
+        padding-bottom: 15px;
+    }
+
+    #testimonial .container .card .content .text_container .stars {
+        flex-direction: row;
+        justify-content: flex-start;
+        column-gap: 20px;
+    }
+
+    #gallery .container .gallery_container {
+        padding: 90px 20px 10px 20px;
+        column-gap: 10px;
+        text-align: center;
+    }
+
+    #gallery .container .gallery_container .commercial img,
+    #gallery .container .gallery_container .residential img {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    #gallery .container .gallery_container .residential h2,
+    #gallery .container .gallery_container .commercial h2 {
+        margin-bottom: 5px;
+    }
+
+    #footer .footer_container .footer_wrapper .information {
+        padding: 25px 40px;
+    }
+
+    #footer .footer_container .footer_wrapper .contact_us {
+        padding: 15px 15px;
+    }
+
+    #footer .footer_container .footer_wrapper .contact_us h3 {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    #footer .footer_container .footer_wrapper .information .logo_wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+
+    #footer .footer_container .footer_wrapper .information .logos {
+        margin: 0 auto;
+    }
+
+    #footer .col-info {
+        font-size: 13px;
+    }
+
+    #footer .footer_container .footer_wrapper .information h6 {
+        font-size: 10px;
+    }
+
+    #footer .information-social {
+        max-width: 200px;
+        margin: 0 auto;
+        padding-top: 35px;
+        display: flex;
+        flex-direction: unset;
+        column-gap: 30px;
+    }
+    #footer .footer_menu {
+        padding: 0 0 20px 0;
+    }
+    #footer .footer_menu .footer_content .menu_flex {
+        flex-direction: column;
+        row-gap: 5px;
+    }
+    
+    #footer .footer_menu .footer_content {
+        border-radius: unset;
+    }
+}
+
+
+
