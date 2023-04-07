@@ -8,7 +8,7 @@
 }
 
 
-section{
+section {
     width: 100%;
     transition: 0.5s;
 }
@@ -29,6 +29,47 @@ section{
 @font-face {
     font-family: "The Historia Demo";
     src: url("fonts/thehistoriademo/TheHistoriaDemo.ttf");
+}
+
+
+.hamburger {
+    position: relative;
+    display: none;
+    width: 35px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    -webkit-transform: rotate(-45deg) translate(-4px, 6px);
+    transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.hamburger.is-active:after {
+    -webkit-transform: rotate(45deg) translate(-5px, -8px);
+    transform: rotate(45deg) translate(-5px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
 }
 
 /* this is a test git shit */
@@ -128,6 +169,7 @@ header {
     background-size: cover;
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-left: 20px;
     object-fit: cover;
 }
 
@@ -224,7 +266,7 @@ header {
 
 #text_container h2 {
     font-family: 'Montserrat';
-    font-size: clamp(0.75rem, 0.75rem + 2.5vw, 3.75rem);
+    font-size: clamp(1.5rem, -1.3125rem + 9vw, 3.75rem);
     font-weight: 700;
     color: #FFFFFF;
     margin-bottom: 22px;
@@ -232,7 +274,7 @@ header {
 
 #text_container h3 {
     font-family: 'The Historia Demo';
-    font-size: clamp(0.875rem, 0.875rem + 4.4792vw, 6.25rem);
+    font-size: clamp(1.5rem, -4.4375rem + 19vw, 6.25rem);
     color: #E9E47E;
     font-weight: 200;
     margin-bottom: 44px;
@@ -272,6 +314,7 @@ header {
     background: url('../images/common/section_2_background.fw.jpg')no-repeat center;
     background-size: cover;
     padding: 0 20px;
+    object-fit: cover;
 }
 
 #who_are_we .container {
@@ -309,7 +352,7 @@ header {
 
 #who_are_we .container .card .text_container h2 {
     font-family: 'Montserrat';
-    font-size: clamp(0.75rem, 0.75rem + 0.3646vw, 1.1875rem);
+    font-size: 19px;
     color: #E5BA20;
     letter-spacing: 0.4em;
     padding-bottom: 15px;
@@ -317,7 +360,7 @@ header {
 
 #who_are_we .container .card .text_container h3 {
     font-family: 'Montserrat';
-    font-size: clamp(0.875rem, 0.875rem + 1.875vw, 3.125rem);
+    font-size: clamp(1.5rem, -0.5313rem + 6.5vw, 3.125rem);
     padding-bottom: 6px;
     background-image: linear-gradient(to right, #EBE680, #997E22);
     -webkit-background-clip: text;
@@ -326,7 +369,7 @@ header {
 
 #who_are_we .container .card .text_container h4 {
     font-family: 'Montserrat';
-    font-size: clamp(0.75rem, 0.75rem + 0.3646vw, 1.1875rem);
+    font-size: 19px;
     color: #FFFFFF;
     letter-spacing: 0.2em;
     padding-bottom: 24px;
@@ -334,7 +377,7 @@ header {
 
 #who_are_we .container .card .text_container p {
     font-family: 'Montserrat';
-    font-size: clamp(0rem, 0rem + 0.8333vw, 1rem);
+    font-size: clamp(0.75rem, 0.4375rem + 1vw, 1rem);
     text-align: justify;
     color: #FFFFFF;
     letter-spacing: 0.009em;
@@ -350,7 +393,7 @@ header {
 
 #who_are_we .container .card .text_container p span {
     font-family: 'Montserrat';
-    font-size: clamp(0.75rem, 0.75rem + 0.3646vw, 1.1875rem);
+    font-size: 25px;
     font-weight: bold;
     padding-bottom: 23px;
     background-image: linear-gradient(to right, #EBE680, #997E22);
@@ -397,14 +440,14 @@ header {
 
 #about_us .container h2 {
     font-family: 'Montserrat';
-    font-size: clamp(0.75rem, 0.75rem + 2.5vw, 3.75rem);
+    font-size: clamp(1.5rem, -1.3125rem + 9vw, 3.75rem);
     font-weight: bold;
     color: #FFFFFF;
 }
 
 #about_us .container h3 {
     font-family: 'Montserrat';
-    font-size: clamp(0.75rem, 0.75rem + 2.5vw, 3.75rem);
+    font-size: clamp(1.5rem, -1.3125rem + 9vw, 3.75rem);
     font-weight: 300;
     color: #C3A952;
     padding-bottom: 38px;
@@ -433,7 +476,7 @@ header {
 
 #what_we_do .text h2 {
     font-family: 'Montserrat';
-    font-size: clamp(0.75rem, 0.75rem + 0.3646vw, 1.1875rem);
+    font-size: clamp(0.75rem, 0.2031rem + 1.75vw, 1.1875rem);
     color: #E5BB21;
     letter-spacing: 0.4em;
     padding-bottom: 15px;
@@ -441,7 +484,7 @@ header {
 
 #what_we_do .text h3 {
     font-family: 'Montserrat';
-    font-size: clamp(0.875rem, 0.875rem + 1.875vw, 3.125rem);
+    font-size: clamp(1.5rem, -0.5313rem + 6.5vw, 3.125rem);
     background-image: linear-gradient(to right, #EBE680, #997E22);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -450,7 +493,7 @@ header {
 
 #what_we_do .text h4 {
     font-family: 'Montserrat';
-    font-size: clamp(0.75rem, 0.75rem + 0.3646vw, 1.1875rem);
+    font-size: clamp(0.75rem, 0.2031rem + 1.75vw, 1.1875rem);
     font-weight: 400;
     color: #131313;
     letter-spacing: 0.2em;
@@ -471,7 +514,8 @@ header {
     width: 100%;
     position: relative;
 }
-#what_we_do .container .gallery .gallery-img{
+
+#what_we_do .container .gallery .gallery-img {
     height: 100%;
     width: 100%;
 }
@@ -484,6 +528,15 @@ header {
     font-family: 'Montserrat';
     color: #FFFFFF;
     bottom: 0;
+}
+
+#what_we_do .container .gallery .decoration figcaption {
+    font-family: 'Poppins';
+    font-size: clamp(0.75rem, 0.125rem + 2vw, 1.25rem);
+    font-weight: bold;
+    background-image: linear-gradient(to right, #EBE680, #997E22);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #what_we_do .container .gallery .decoration a {
@@ -499,10 +552,11 @@ header {
     position: absolute;
     right: 0;
     bottom: 0;
+    transition: 0.5s ease;
 }
 
 #what_we_do .container .gallery .decoration a:hover {
-    background-color: #FFFFFF;
+    background: #FFFFFF;
     color: #E5BC22;
 }
 
@@ -512,6 +566,7 @@ header {
     background: url('../images/common/section_5_background.fw.png') no-repeat center;
     background-size: cover;
     padding: 0 20px;
+    object-fit: cover;
 }
 
 #testimonial .container {
@@ -547,15 +602,16 @@ header {
     display: flex;
     column-gap: 40px;
 }
-#testimonial .container .card .content .quote{
+
+#testimonial .container .card .content .quote {
     height: auto;
 }
 
-#testimonial .container .card .content .text_container h2{
+#testimonial .container .card .content .text_container h2 {
     max-width: 255px;
     width: 100%;
     font-family: 'Montserrat';
-    font-size: clamp(0.75rem, 0.75rem + 0.3646vw, 1.1875rem);
+    font-size: 19px;
     font-weight: 300px;
     color: #DBD26E;
     padding-bottom: 17px;
@@ -564,7 +620,7 @@ header {
 
 #testimonial .container .card .content .text_container h3 {
     font-family: 'Montserrat';
-    font-size: clamp(0.875rem, 0.875rem + 1.875vw, 3.125rem);
+    font-size: clamp(1.5rem, -0.5313rem + 6.5vw, 3.125rem);
     font-weight: bold;
     margin: 0 auto;
     background-image: linear-gradient(to right, #EBE680, #997E22);
@@ -574,7 +630,7 @@ header {
 
 #testimonial .container .card .content .text_container p.reviews {
     font-family: 'Montserrat';
-    font-size: clamp(0rem, 0rem + 0.8854vw, 1.0625rem);
+    font-size: 16px;
     color: #FFFFFF;
     margin: 0 auto;
     padding-bottom: 50px;
@@ -587,18 +643,22 @@ header {
     justify-content: space-between;
     align-items: first baseline;
     font-family: 'Montserrat';
-    font-size: clamp(0.75rem, 0.75rem + 0.6771vw, 1.5625rem);
+    font-size: clamp(1.125rem, 0.5781rem + 1.75vw, 1.5625rem);
     font-weight: bold;
     color: #FFFFFF;
     margin: 0 auto;
     padding-bottom: 36px;
 }
 
+#testimonial .container .card .content .text_container .stars p {
+    font-size: clamp(0.75rem, -0.2656rem + 3.25vw, 1.5625rem);
+}
+
 #testimonial .container .card .content .text_container p.reviews_content {
     max-width: 385px;
     width: 100%;
     font-family: 'Montserrat';
-    font-size: clamp(0rem, 0rem + 0.8333vw, 1rem);
+    font-size: 16px;
     color: #FFFFFF;
     margin: 0 auto;
     line-height: 28px;
@@ -629,8 +689,8 @@ header {
 }
 
 /* === SECTION 6 === */
-section#gallery {
-    padding:  0 20px 50px 20px;
+section #gallery {
+    padding: 0 20px 50px 20px;
 }
 
 #gallery .container {
@@ -651,10 +711,10 @@ section#gallery {
     width: 100%;
 }
 
-#gallery .container .gallery_container .commercial h2, 
+#gallery .container .gallery_container .commercial h2,
 #gallery .container .gallery_container .residential h2 {
     font-family: 'Poppins';
-    font-size: clamp(0.875rem, 0.875rem + 1.875vw, 3.125rem);
+    font-size: clamp(0.75rem, -2.2188rem + 9.5vw, 3.125rem);
     font-weight: 800;
     background-image: linear-gradient(to right, #EBE680, #997E22);
     -webkit-background-clip: text;
@@ -671,35 +731,35 @@ section#gallery {
    ===
    ===
 */
-    
+
 
 #footer {
     position: relative;
     background: #000000;
 }
 
-#footer .footer_container{
+#footer .footer_container {
     max-width: 1550px;
     width: 100%;
     margin: 0 auto;
 }
 
-#footer .footer_container .footer_wrapper{
+#footer .footer_container .footer_wrapper {
     display: flex;
 }
 
-#footer .footer_container .footer_wrapper .contact_us{
+#footer .footer_container .footer_wrapper .contact_us {
     max-width: 835px;
     width: 100%;
     background: #ffffff;
     padding: 80px 72px;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.9);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.9);
     margin-top: -50px;
 }
 
 #footer .footer_container .footer_wrapper .contact_us h2 {
     font-family: 'Barlow';
-    font-size: clamp(0rem, 0rem + 0.8854vw, 1.0625rem);
+    font-size: 17px;
     font-weight: bold;
     color: #878787;
     letter-spacing: 0.5;
@@ -707,8 +767,8 @@ section#gallery {
 }
 
 #footer .footer_container .footer_wrapper .contact_us h3 {
+    font-size: clamp(1.5rem, -1.7031rem + 10.25vw, 4.0625rem);
     font-family: 'Montserrat';
-    font-size: clamp(0.875rem, 0.875rem + 2.6563vw, 4.0625rem);
     font-weight: bold;
     background-image: linear-gradient(to right, #EBE680, #997E22);
     -webkit-background-clip: text;
@@ -726,11 +786,11 @@ section#gallery {
     line-height: 22px;
 }
 
-#footer .footer_container .footer_wrapper .contact_us form{
+#footer .footer_container .footer_wrapper .contact_us form {
     margin-top: 30px;
 }
 
-#footer .footer_container .footer_wrapper .contact_us .form-control{
+#footer .footer_container .footer_wrapper .contact_us .form-control {
     width: 100%;
     border: 1px solid #E9E9E9;
     background: #F4F4F4;
@@ -738,21 +798,35 @@ section#gallery {
     padding: 15px 30px;
     margin-bottom: 20px;
     border-radius: 5px;
+    font-family: 'Poppins';
 }
-#footer .footer_container .footer_wrapper .contact_us .contact_us_btn{
+
+#footer .footer_container .footer_wrapper .contact_us .contact_us_btn {
     text-transform: uppercase;
     background: linear-gradient(#D0C563, #AD993D);
     border: 0;
+    border-radius: 30px;
     padding: 15px;
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#footer .footer_container .footer_wrapper .contact_us .submit_btn {
+    max-width: 207px;
+    width: 100%;
     margin-left: auto;
 }
+
 #footer .footer_container .footer_wrapper .information {
     padding: 36px 100px;
     text-align: center;
     font-family: 'Poppins';
 }
-#footer .footer_container .footer_wrapper .information .logos{
-    margin-bottom: 30px; 
+
+#footer .footer_container .footer_wrapper .information .logos {
+    margin-bottom: 30px;
 }
 
 #footer .row-info-contact {
@@ -761,24 +835,28 @@ section#gallery {
     align-items: center;
     column-gap: 48px;
 }
-#footer .col-info{
+
+#footer .col-info {
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 20px;
 }
-#footer .info-content{
+
+#footer .info-content {
     color: #ffffff;
 }
-#footer .info-content p{
+
+#footer .info-content p {
     color: #ffffff;
-    font-size: 15px; 
+    font-size: 15px;
 }
+
 #footer .information-social {
     text-align: left;
     display: flex;
     column-gap: 20px;
-    margin-top: 30px; 
+    margin-top: 30px;
     align-items: center;
 }
 
@@ -811,6 +889,7 @@ section#gallery {
     cursor: pointer;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
+
 #footer .copyright {
     font-family: 'Montserrat';
     font-size: 13px;
@@ -821,21 +900,148 @@ section#gallery {
 }
 
 /* === ===     === ===
-   === ===     === ===
    ===  ===   ===  ===
    ===   === ===   ===
-   ===     ==      ===
+   ===     ===     ===
+   ===             ===
    === MEDIA QUERY ===
 */
 
+/* === DESKTOP === */
+
+@media screen and (max-width: 1860px) {
+    #what_we_do .container {
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 50px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1715px) {
+    header #header_container .logo img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1415px) {
+
+    #gallery .gallery_container .commercial img,
+    #gallery .gallery_container .residential img {
+        width: 100%;
+    }
+
+    #gallery .container .gallery_container .commercial h2,
+    #gallery .container .gallery_container .residential h2 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        font-size: 40px;
+    }
+
+    #footer .footer_container .footer_wrapper .contact_us {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 1160px) {
+    header #header_container .logo img {
+        width: 90%;
+    }
+    #who_are_we .container .card .text_container {
+        max-width: 820px;
+        width: 85%;
+        text-align: center;
+    }
+    #what_we_do .container {
+        row-gap: 15px;
+        margin-top: -20px;
+    }
+}
+
+
+@media screen and (max-width: 1105px) {
+
+    #gallery .container .gallery_container .commercial h2,
+    #gallery .container .gallery_container .residential h2 {
+        row-gap: 5px;
+        text-align: center;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #what_we_do .container {
+        row-gap: 15px;
+    }
+    #footer .footer_wrapper .information img.logos {
+        width: 70%;
+    }
+
+    #footer .row-info-contact {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #footer .information-social {
+        width: 100%;
+        padding-top: 25px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    #testimonial .card .text_container .stars {
+        flex-direction: column;
+        row-gap: 20px;
+    } 
+    #testimonial .card .text_container .reviews_content {
+        text-align: justify;
+    }
+    #testimonial .quote-container img {
+    width: 100%;
+    }
+    #gallery .gallery_container {
+        margin-top: -50px;
+    }
+    #what_we_do .text {
+        margin-top: -30px;
+        line-height: 30px;
+    }
+    #what_we_do .container .gallery .decoration {
+        margin-bottom: 5px;
+    }
+}
+
 /* MOBILE */
 
-@media screen and (max-width: 959) {
-    .hamburger{
+@media screen and (max-width: 959px) {
+
+    #footer .footer_wrapper {
+        flex-direction: column;
+    }
+    #footer .footer_wrapper .information .row-info-contact {
+        flex-direction: row;
+    }
+    #footer .footer_wrapper .information .information-wrapper {
+       display: flex;
+       flex-direction: column;
+    }
+    #footer .information {
+        margin: 0 auto;
+    }
+    #what_we_do .container .gallery .decoration figure figcaption {
+        margin-right: 10px;
+    }
+
+
+    .hamburger {
         display: block;
     }
 
-    header #header_container .nav_menu{
+    header #header_container .nav_menu {
         position: absolute;
         background: #000000;
         left: 0;
@@ -843,6 +1049,7 @@ section#gallery {
         width: 100%;
         z-index: 1;
     }
+
     header #header_container .nav_menu nav {
         width: 100%;
         position: absolute;
@@ -854,8 +1061,8 @@ section#gallery {
         transform: translateY(-130%);
         height: 100vh;
     }
-    
-    header #header_container .nav_menu nav ul{
+
+    header #header_container .nav_menu nav ul {
         flex-direction: column;
         row-gap: 40px;
     }
@@ -863,5 +1070,19 @@ section#gallery {
     header #header_container .header_info {
         flex-direction: column;
         row-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #who_are_we .container .card::before,
+    #testimonial .container .card::before {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 680px) {
+    #testimonial .container .card .content {
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
     }
 }

@@ -19,8 +19,10 @@
 	<?php $this->helpers->analytics(); ?>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap"
+		rel="stylesheet">
 </head>
 
 <body <?php $this->helpers->bodyClasses($view); ?>>
@@ -41,7 +43,6 @@
 			<div class="logo">
 				<img src="./public/images/common/main_logo.png" alt="">
 			</div>
-
 			<div class="nav_menu">
 				<div class="header_info">
 					<div class="phone">
@@ -67,6 +68,9 @@
 						<li><a href="#">VIRTUAL STAGING</a></li>
 					</ul>
 				</nav>
+				<button class="hamburger">
+					<div class="bar"></div>
+				</button>
 			</div>
 
 
@@ -74,7 +78,7 @@
 			<!-- Hero -->
 
 		</div>
-		<?php if ($view == "home") : ?>
+		<?php if ($view == "home"): ?>
 			<div id="text_container">
 				<h2>A CREATIVE TEAM OF</h2>
 				<h3>Real Estate Renderings Specialists</h3>
