@@ -164,7 +164,6 @@ header {
     display: flex;
     justify-content: space-between;
     column-gap: 23px;
-    cursor: pointer;
 }
 
 #header_container .nav_menu .header_info .phone_text {

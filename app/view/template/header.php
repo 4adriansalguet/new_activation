@@ -50,9 +50,9 @@
 						<span class="tel_num"> 856 - 749 - 8432 </span>
 					</div>
 					<div class="soc_med">
-						<img src="./public/images/icons/facebook.fw.png" alt="#">
-						<img src="./public/images/icons/instagram.fw.png" alt="#">
-						<img src="./public/images/icons/location.fw.png" alt="#">
+						<a href=""><img src="./public/images/icons/facebook.fw.png" alt="#" target="_blank"></a>
+						<a href=""><img src="./public/images/icons/instagram.fw.png" alt="#" target="_blank"></a>
+						<a href=""><img src="./public/images/icons/location.fw.png" alt="#" target="_blank"></a>
 					</div>
 				</div>
 				<nav>
