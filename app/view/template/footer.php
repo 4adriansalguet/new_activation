@@ -24,6 +24,7 @@
                         alt="footer logo">
                     <img class="logos" src="<?php echo URL ?>/public/images/common/nahb.fw.png" alt="footer logo">
                     </div>
+                    <div class="soc_med_footer_flex">
                     <div class="row-info-contact">
                         <div class="col-info">
                             <img src="<?php echo URL ?>./public/images/common/footer-call.fw.png" alt="footer call">
@@ -47,6 +48,7 @@
                                 alt="footer instagram"></a>
                         <a href="#"><img src="<?php echo URL ?>./public/images/icons/location.fw.png"
                                 alt="footer location"></a>
+                    </div>
                     </div>
                 </div>
             </div>

@@ -23,7 +23,8 @@
     <div class="container">
         <img src="./public/images/common/section_3_logo.fw.png" alt="logo">
         <h2>
-            Renderings that Catch and Hold the Atten of Potential Home Buyers
+            Renderings <span>that</span> Catch <span>and</span> <span>Hold</span> the <span>Attention</span> 
+            <span>of </span>Potential Home Buyers.
         </h2>
         <h3>Bring Your Designs To Life</h3>
         <a class="btn" href="#">LEARN MORE</a>
