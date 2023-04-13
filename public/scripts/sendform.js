@@ -2,9 +2,6 @@ $(document).ready(function(){
 	console.log('ready');
 	$("form.sends-email").each(function(){
 
-		// add neccessary html elements for display
-		$(this).append('<div class="messages"><p class="success alert alert-success">Thank you. Your message has been sent.</p><p class="failed alert alert-danger">Message was not sent.</p</div>');
-		$(this).children('[type="submit"]').after('<img src="public/images/loading.gif" class="loading" alt="">');
 
 		// reference the form as parent
 		var parent = $(this);

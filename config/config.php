@@ -4,9 +4,9 @@
 	$siteInfo= [
 			//general info
 			"company_name" => "Company Name", 
-			"phone" =>  "000-000-0000", 		  //either no format or dashed format
+			"phone" =>  "856 - 749 - 8432", 		  //either no format or dashed format
 			"phone2" =>  "000-000-0000", 		  //either no format or dashed format
-			"email" => "email@domain.com",   //by default is used as recipient email  
+			"email" => "info@renderingsplus.com",   //by default is used as recipient email  
 			"address" => "Company Address", 
 			
 			// email related

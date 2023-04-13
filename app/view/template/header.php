@@ -13,7 +13,7 @@
 	<?php $this->helpers->seo($view); ?>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap"
 		rel="stylesheet">
-	<link rel="icon" href="public/images/favicon.png" type="image/x-icon">
+		<link rel="icon" href="public/images/favicon.png" type="image/x-icon">
 	<link href="<?php echo URL; ?>public/styles/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 	<link rel="stylesheet" href="<?php echo URL; ?>public/fancybox/source/jquery.fancybox.css" media="screen" />

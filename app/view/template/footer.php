@@ -1,7 +1,7 @@
 <footer id="footer">
     <div class="footer_container">
         <div class="footer_wrapper">
-            <div data-aos="fade-up" data-aos-delay="300" class="contact_us">
+            <div class="contact_us">
                 <h2>GET A QUOTE</h2>
                 <h3>CONTACT US</h3>
                 <p>Please fill out the form below and we will get back to you as soon as we can with a reply.
@@ -28,7 +28,7 @@
                         </label>
                     <?php endif ?>
                     <div class="submit_btn">
-                        <button data-aos="fade-in" data-aos-delay="400" type="submit"
+                        <button type="submit"
                             class="contact_us_btn ctcBtn">Submit form</button>
                     </div>
                 </form>
@@ -36,14 +36,14 @@
             <div class="information">
                 <div class="information-wrapper">
                     <div class="logo_wrapper">
-                        <img data-aos="fade-up" data-aos-delay="400" class="logos"
+                        <img class="logos"
                             src="<?php echo URL ?>./public/images/common/footer-logo.fw.png" alt="footer logo">
-                        <img data-aos="fade-up" data-aos-delay="500" class="logos"
+                        <img class="logos"
                             src="<?php echo URL ?>/public/images/common/nahb.fw.png" alt="footer logo">
                     </div>
                     <div class="soc_med_footer_flex">
                         <div class="row-info-contact">
-                            <div data-aos="fade-right" data-aos-delay="400" class="col-info">
+                            <div class="col-info">
                                 <img src="<?php echo URL ?>./public/images/common/footer-call.fw.png" alt="footer call">
                                 <div class="info-content">
                                     <p>Phone</p>
@@ -51,7 +51,7 @@
                                     </h3>
                                 </div>
                             </div>
-                            <div data-aos="fade-right" data-aos-delay="300" class="col-info">
+                            <div class="col-info">
                                 <img src="<?php echo URL ?>./public/images/common/footer-mail.fw.png" alt="footer mail">
                                 <div class="info-content">
                                     <p>Email</p>
@@ -60,13 +60,13 @@
                             </div>
                         </div>
                         <div class="information-social">
-                            <a href="#"><img data-aos="fade-up" data-aos-delay="100"
+                            <a href="#"><img
                                     src="<?php echo URL ?>./public/images/icons/facebook.fw.png"
                                     alt="footer facebook"></a>
-                            <a href="#"><img data-aos="fade-up" data-aos-delay="120"
+                            <a href="#"><img
                                     src="<?php echo URL ?>./public/images/icons/instagram.fw.png"
                                     alt="footer instagram"></a>
-                            <a href="#"><img data-aos="fade-up" data-aos-delay="140"
+                            <a href="#"><img
                                     src="<?php echo URL ?>./public/images/icons/location.fw.png"
                                     alt="footer location"></a>
                         </div>
@@ -76,9 +76,9 @@
 
         </div>
         <div class="footer_menu">
-            <div data-aos="fade-down" data-aos-delay="400" class="footer_content">
-                <ul data-aos="fade-down" data-aos-delay="300" class="menu_flex">
-                    <div data-aos="fade-down" data-aos-delay="400" class="footer_content">
+            <div class="footer_content">
+                <ul class="menu_flex">
+                    <div class="footer_content">
                         <ul class="menu_flex">
                             <li <?php $this->helpers->isActiveMenu("home"); ?>><a href="<?php echo URL ?>">HOME</a></li>
                             <li <?php $this->helpers->isActiveMenu("commercial"); ?>><a href="<?php echo URL ?>commercial#content">COMMERCIAL RENDERINGS</a></li>
