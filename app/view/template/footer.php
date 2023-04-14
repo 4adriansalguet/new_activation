@@ -157,7 +157,7 @@
 <?php endif; ?>
 
 
-<?php if ($view == "gallery"): ?>
+<?php if ($view == "gallery" || $view == "commercial"): ?>
     <script src="<?php echo URL; ?>public/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
     <script src="<?php echo URL; ?>public/scripts/jquery.pajinate.js"></script>
     <script>
