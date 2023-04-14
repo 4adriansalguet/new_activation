@@ -157,13 +157,13 @@
 <?php endif; ?>
 
 
-<?php if ($view == "gallery" || $view == "commercial"): ?>
+<?php if ($view == "gallery" || $view == "commercial" || $view == "residential" || $view == "interior" || $view == "floorplan" || $view == "permit" || $view == "contractor" || $view == "virtual"): ?>
     <script src="<?php echo URL; ?>public/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
     <script src="<?php echo URL; ?>public/scripts/jquery.pajinate.js"></script>
     <script>
         $('#gall1').pajinate({
             num_page_links_to_display: 3,
-            items_per_page: 10
+            items_per_page: 6
         });
         $('.fancy').fancybox({
             helpers: {
