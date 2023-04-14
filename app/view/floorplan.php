@@ -1,13 +1,7 @@
 <section id="content" class="inner-pages">
 <div class="row">
-    <h1>Commercial Renderings</h1>
-    <p>Information coming soon</p>
-	<p>At Renderings Plus, we specialize in creating Renderings for the Commercial Real Estate Market. We offer a
-			comprehensive Marketing Campaign which includes our upscale Elevation Renderings, Interior Renderings, and
-			Floorplan Renderings. Whether built or unbuilt, your commercial projects will come to life. Catch the hold
-			the attention of potential customers as well as your investors. We have done countless commercial projects
-			from five star resorts to large multi family complexes and everything in between. Your clients will love
-			your new Photo Realistic Renderings for all commercial projects.</p>
+    <h1>Floorpan Renderings</h1>
+	<p>At Renderings Plus, we create superior Floorplan Renderings that show the exact layout of the projected home. Clients will clearly understand the complete layout of the projected home. We offer color 2D floorplans as well as our exclusive 3D floorplans. Simply send us the CAD drawings for a projected home and leave the rest to us. We also offer these floorplans for already built homes.  </p>
     <div id="gall1" class="gallery-container"> 
 			<ul class="gallery clearfix" >
 				<?php foreach ($gallery as $gall) {  if($gall["rel"] == "floorplan") { ?>

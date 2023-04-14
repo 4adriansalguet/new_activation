@@ -1,13 +1,7 @@
 <section id="content" class="inner-pages">
 <div class="row">
-    <h1>Commercial Renderings</h1>
-    <p>Information coming soon</p>
-	<p>At Renderings Plus, we specialize in creating Renderings for the Commercial Real Estate Market. We offer a
-			comprehensive Marketing Campaign which includes our upscale Elevation Renderings, Interior Renderings, and
-			Floorplan Renderings. Whether built or unbuilt, your commercial projects will come to life. Catch the hold
-			the attention of potential customers as well as your investors. We have done countless commercial projects
-			from five star resorts to large multi family complexes and everything in between. Your clients will love
-			your new Photo Realistic Renderings for all commercial projects.</p>
+    <h1>Permit Renderings</h1>
+	<p>More jurisdictions are now requiring a Rendering attached with the Permit Application. At Renderings Plus, we create easy to understand Renderings for all Jurisdictions. We clearly illustrate the projected project and take the guessing out of ‘plan reading’ done by jurisdictions. With our Photo Realistic Renderings, jurisdictions will truly understand what the projected build is, therefore your application will potentially get approved faster.</p>
     <div id="gall1" class="gallery-container"> 
 			<ul class="gallery clearfix" >
 				<?php foreach ($gallery as $gall) {  if($gall["rel"] == "permit") { ?>

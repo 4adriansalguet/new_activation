@@ -1,13 +1,7 @@
 <section id="content" class="inner-pages">
 <div class="row">
-    <h1>Commercial Renderings</h1>
-    <p>Information coming soon</p>
-	<p>At Renderings Plus, we specialize in creating Renderings for the Commercial Real Estate Market. We offer a
-			comprehensive Marketing Campaign which includes our upscale Elevation Renderings, Interior Renderings, and
-			Floorplan Renderings. Whether built or unbuilt, your commercial projects will come to life. Catch the hold
-			the attention of potential customers as well as your investors. We have done countless commercial projects
-			from five star resorts to large multi family complexes and everything in between. Your clients will love
-			your new Photo Realistic Renderings for all commercial projects.</p>
+    <h1>Residential Renderings</h1>
+	<p>At Renderings Plus, we specialize in creating Elevation Renderings for the Real Estate Market. With our award winning Renderings, show your clients the true projection of the final home build. You will have full control of each pixel therefore renderings can have different scenes, views from multiple perspectives, show different building materials, day or night scenes, and much more. With our Elevation Renderings, your unbuilt homes will come to life. We also make renderings for already built homes without the blueprints. With our Photo Realistic Elevation Renderings, you”ll be able to capture and hold the attention of potential home buyers. </p>
     <div id="gall1" class="gallery-container"> 
 			<ul class="gallery clearfix" >
 				<?php foreach ($gallery as $gall) {  if($gall["rel"] == "residential") { ?>

@@ -797,7 +797,8 @@ div#gall1 {
 }
 
 #gall1 img.img-responsive {
-    width: 341px;
+    max-width: 341px;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     height: 300px;
@@ -1016,7 +1017,7 @@ div#gall1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 20px;
+    column-gap: clamp(0.5rem, 0.5rem + 0.625vw, 1.25rem);
     font-family: 'Montserrat';
     padding: 20px 0;
 }
@@ -1734,7 +1735,7 @@ a.page_link.active_page {
     }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:426px) {
     #footer .row-info-contact {
         flex-direction: column;
         row-gap: 25px;
@@ -1743,6 +1744,16 @@ a.page_link.active_page {
         max-width: 220px;
         font-size: 13px;
         margin-right: auto;
+    }
+
+    a.page_link.active_page {
+        background: unset;
+        color: #E5BC22;
+        font-weight: 700;
+    }
+    a.page_link {
+        background: unset;
+        color: #000000;
     }
 }
 

@@ -1,13 +1,7 @@
 <section id="content" class="inner-pages">
 <div class="row">
     <h1>Contractor Renderings</h1>
-    <p>Information coming soon</p>
-	<p>At Renderings Plus, we specialize in creating Renderings for the Commercial Real Estate Market. We offer a
-			comprehensive Marketing Campaign which includes our upscale Elevation Renderings, Interior Renderings, and
-			Floorplan Renderings. Whether built or unbuilt, your commercial projects will come to life. Catch the hold
-			the attention of potential customers as well as your investors. We have done countless commercial projects
-			from five star resorts to large multi family complexes and everything in between. Your clients will love
-			your new Photo Realistic Renderings for all commercial projects.</p>
+	<p>At Renderings Plus, we help Visualize and Market the projected work of Contractors. We clearly illustrate your projected work in a Photo Realistic Rendering, therefore your customers will easily understand your projected work. Simply, send us images of the project in its current state and we'll finish your projected work in a High Quality Photo Realistic Rendering. With our Renderings, you can take the Marketing of your projected work to a more Professional Level. </p>
     <div id="gall1" class="gallery-container"> 
 			<ul class="gallery clearfix" >
 				<?php foreach ($gallery as $gall) {  if($gall["rel"] == "contractor") { ?>

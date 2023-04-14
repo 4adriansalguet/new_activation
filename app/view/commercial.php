@@ -2,8 +2,7 @@
 
     <div class="row">
     <h1>Commercial Renderings</h1>
-    <p>Information coming soon</p>
-	<p>At Renderings Plus, we specialize in creating Renderings for the Commercial Real Estate Market. We offer a
+	<p>At Renderings Plus, we specialize in creating Renderings for the Commercial Real 	Estate Market. We offer a
 			comprehensive Marketing Campaign which includes our upscale Elevation Renderings, Interior Renderings, and
 			Floorplan Renderings. Whether built or unbuilt, your commercial projects will come to life. Catch the hold
 			the attention of potential customers as well as your investors. We have done countless commercial projects
