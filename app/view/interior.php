@@ -1,7 +1,7 @@
 <section id="content" class="inner-pages">
 <div class="row">
     <h1>Interior Renderings</h1>
-	<p>At Renderings Plus, we specialize in creating upscale Interior Renderings. Show clients what each Key Space of the projected home is going to be when built. We pay close attention to every detail in the Rendering, which results in a Superior Interior Rendering. We highlight all the Furnishings and all the finishes of your projected homes with superior lighting techniques. With our Photo Realistic Renderings, you’ll be able capture and hold the attention of potential home buyers.</p>
+	<p>At Renderings Plus, we specialize in creating upscale Interior Renderings. Show clients what each Key Space of the projected home is going to be when built. We pay close attention to every detail in the Rendering, which results in a Superior Interior Rendering. We highlight all the Furnishings and all the finishes of your projected homes with superior lighting techniques. With our Photo Realistic Renderings, you’ll be able capture and hold the attention of potential home buyers..</p>
     <div id="gall1" class="gallery-container"> 
 			<ul class="gallery clearfix" >
 				<?php foreach ($gallery as $gall) {  if($gall["rel"] == "interior") { ?>
